@@ -1,6 +1,6 @@
 import React from 'react';
 
-const StartSelect = () => {
+const StartSelect = ({handleSelectPokemon}) => {
   return (
     <div style={{ paddingTop: '35%', display: 'flex', justifyContent: 'center' }}>
       <div
@@ -19,6 +19,7 @@ const StartSelect = () => {
             borderRadius: '20px',
             boxShadow: '2px 2px 4px rgba(0,0,0,0.3)',
           }}
+          onClick= {handleSelectPokemon}
         ></div>
 
         {/* Botón START */}
